@@ -1,0 +1,7 @@
+@import '../dev-scss/font';
+@include font("OpenSans", "OpenSans-Bold", "700", "normal");
+@include font("OpenSans", "OpenSans-ExtraBold", "800", "normal");
+@include font("OpenSans", "OpenSans-Italic", "400", "italic");
+@include font("OpenSans", "OpenSans-Light", "300", "normal");
+@include font("OpenSans", "OpenSans-Regular", "400", "normal");
+@include font("OpenSans", "OpenSans-SemiBold", "600", "normal");
