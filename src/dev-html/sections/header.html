@@ -1,9 +1,7 @@
 <header class="header">
   <div class="header__container container">
     <div class="header__top">
-      <div class="header__logo">
-        @@include("../components/logo.html", {})
-      </div>
+      @@include("../components/logo.html", {class: "header__logo"})
       <div class="header__question">
         <p class="header__question-number">
           +7 926 330-68-34
@@ -13,6 +11,11 @@
         </a>
       </div>
     </div>
-    <div class="header__content"></div>
+    <div class="header__bottom">
+      @@include("../components/cta.html", {class: "header__cta"})
+      <div class="header__image">
+        <img src="@img/header/auto.png" alt="auto">
+      </div>
+    </div>
   </div>
 </header>

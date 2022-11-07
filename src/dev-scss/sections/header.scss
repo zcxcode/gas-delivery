@@ -1,7 +1,20 @@
 .header {
+
   &__top {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__bottom {
+  position: relative;
+
+    display: flex;
+  }
+
+  &__image {
+    position: absolute;
+    right: -390px;
+    bottom: -20px;
   }
 
   &__logo {
@@ -14,7 +27,7 @@
     margin-right: 32px;
 
     &-number {
-      margin-bottom: 1px;
+      margin-bottom: 5px;
       font-family: "RussoOne";
       font-weight: 400;
       font-size: 24px;
@@ -28,5 +41,9 @@
       text-decoration-line: underline;
       color: $c-blue;
     }
+  }
+  &__cta {
+    margin-top: 33px;
+    margin-left: 37px;
   }
 }
