@@ -95,3 +95,28 @@ export const less = () => {
     .pipe(app.gulp.dest(app.path.build.css))
     .pipe(app.plugins.browsersync.stream());
 };
+
+export const fontsCss = () => {
+  return app.gulp
+    .src(app.path.src.fontCss, { sourcemaps: app.isDev })
+    .pipe(
+      app.plugins.plumber(
+        app.plugins.notify.onError({
+          title: "SCSS",
+          message: "Error: <%= error.message %>"
+        })
+      )
+    )
+    .pipe(
+      sass({
+        outputStyle: "expanded"
+      })
+    )
+    .pipe(app.plugins.if(app.isBuild, cleanCss()))
+    .pipe(
+      rename({
+        extname: ".min.css"
+      })
+    )
+    .pipe(app.gulp.dest(app.path.build.css));
+};

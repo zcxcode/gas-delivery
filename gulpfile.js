@@ -13,7 +13,7 @@ import * as resets from "./res/g_tasks/del.js";
 import { copy, copyv } from "./res/g_tasks/copy.js";
 import { mhtml } from "./res/g_tasks/html.js";
 import { mpug } from "./res/g_tasks/html.js";
-import { scss, less } from "./res/g_tasks/styles.js";
+import { scss, less, fontsCss } from "./res/g_tasks/styles.js";
 import { scripts } from "./res/g_tasks/scripts.js";
 import { images } from "./res/g_tasks/imgs.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./res/g_tasks/fonts.js";
@@ -46,11 +46,12 @@ function overwatch() {
 }
 
 const fonts = gulp.series(copy, otfToTtf, ttfToWoff, fontsStyle);
+const fontcss = gulp.series(fontsCss)
 const vid = copyv;
 const resetGulp = gulp.series(resets.rh, resets.rc, resets.rjs, resets.rimg, resets.rsvg);
 const baseGulp = gulp.parallel(devindex, devstyle, scripts, images, svgSprite);
 const dev = gulp.series(resetGulp, baseGulp, gulp.parallel(overwatch, server));
-const build = gulp.series(resetGulp, baseGulp, resets.rsvgb, svgSpriteBuild);
+const build = gulp.series(resetGulp, baseGulp, fontsCss, resets.rsvgb, svgSpriteBuild);
 
 gulp.task("default", dev);
 
@@ -61,4 +62,5 @@ export { build };
 export { resetGulp };
 export { svgSprite };
 export { fonts };
+export { fontcss };
 export { vid };

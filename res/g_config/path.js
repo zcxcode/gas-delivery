@@ -16,12 +16,13 @@ export const path = {
   src: {
     html: `${srcFolder}/*.html`,
     pug: `${srcFolder}/*.pug`,
-    scss: `${srcFolder}/css/*.scss`,
+    scss: [`${srcFolder}/css/*.scss`, `!${srcFolder}/css/fonts.scss`],
     less: `${srcFolder}/css/*.less`,
     js: `${srcFolder}/js/app.js`,
     imgs: [`${srcFolder}/img/**/*.{jpeg,jpg,png,gif,webp,svg}`, `!${srcFolder}/img/UI/*.*`],
     svgs: `${srcFolder}/img/UI/*.svg`,
     fonts: `${srcFolder}/fonts`,
+    fontCss: `${srcFolder}/css/fonts.scss`,
     vid: `${srcFolder}/video/*.mp4`
   },
   watch: {

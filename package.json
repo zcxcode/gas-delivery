@@ -9,6 +9,7 @@
     "build": "gulp build --build",
     "res": "gulp resetGulp",
     "font": "gulp fonts",
+    "fontcss": "gulp fontcss",
     "svg": "gulp svgSprite",
     "vid": "gulp vid"
   },
