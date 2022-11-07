@@ -1,6 +1,6 @@
 // Custom container-width & wrapper overflow
 
-$cw: 1400px; // Container max-width: 1400px
+$cw: 1170px; // Container max-width: 1400px
 $wo: hidden; // Wrapper overflow: hidden
 $mvh: 100%; // Wrapper min-height: 100%
 $mxvh: unset; // Wrapper max-height: unset
@@ -34,8 +34,6 @@ html {
 html,
 body {
   // dev {
-  max-width: 1920px;
-  margin: 0 auto;
   // }
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;

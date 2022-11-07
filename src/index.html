@@ -7,13 +7,17 @@
 
 </head>
 
-<body>
+<body class="body">
 
-  @@include('dev-html/sections/header.html',{})
+  <div class="wrapper">
 
-  <main></main>
+    @@include('dev-html/sections/header.html',{})
 
-  @@include('dev-html/sections/footer.html',{})
+    <main></main>
+
+    @@include('dev-html/sections/footer.html',{})
+
+  </div>
 
   <script src="./js/app.min.js"></script>
 </body>

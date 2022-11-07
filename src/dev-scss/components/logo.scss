@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+
+  &__image-div {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 24px;
+      right: -24px;
+      width: 1px;
+      height: 33px;
+      background-color: #fff;
+    }
+  }
+
+  &__image {
+    width: 269px;
+    height: 98px;
+  }
+
+  &__text {
+    display: block;
+    max-width: 119px;
+    margin-left: 45px;
+    margin-top: 42px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $c-blue;
+  }
+}
