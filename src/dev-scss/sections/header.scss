@@ -1,13 +1,12 @@
 .header {
-
+  padding-bottom: 58px;
   &__top {
     display: flex;
     justify-content: space-between;
   }
 
   &__bottom {
-  position: relative;
-
+    position: relative;
     display: flex;
   }
 

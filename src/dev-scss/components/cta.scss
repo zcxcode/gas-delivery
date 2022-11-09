@@ -4,7 +4,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 127px;
+    bottom: 140px;
     right: 130px;
     width: 100px;
     height: 90px;
@@ -63,6 +63,7 @@
   }
 
   &__comment {
+    margin-bottom: 14px;
     margin-left: 19px;
     font-weight: 600;
     font-size: 16px;
@@ -71,26 +72,10 @@
   }
 
   &__button {
-    display: block;
     width: 395px;
     height: 87px;
     margin-bottom: 13px;
     padding-left: 60px;
     padding-right: 60px;
-    font-family: "RussoOne";
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-    transition: filter 0.3s ease;
-    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
-    color: #f1f1f1;
-    background-image: url("@img/header/btn.svg");
-
-    &:hover {
-      filter: invert(0.18);
-      filter: brightness(1.1);
-      filter: drop-shadow(0 0 7px $c-blue);
-    }
   }
 }

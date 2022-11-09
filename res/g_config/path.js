@@ -37,7 +37,7 @@ export const path = {
   },
   clean: {
     html: `${buildFolder}/*.html`,
-    css: `${buildFolder}/css/*.css`,
+    css: [`${buildFolder}/css/*.css`, `!${buildFolder}/css/fonts.min.css`],
     js: `${buildFolder}/js/*.js`,
     imgs: [`${buildFolder}/img/**/*.*`, `!${buildFolder}/img/sprite/*.svg`, `!${buildFolder}/img/stack/*.html`],
     svgs: `${buildFolder}/img/sprites, ${buildFolder}/img/stack`
