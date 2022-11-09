@@ -3,6 +3,7 @@
   &__top {
     display: flex;
     justify-content: space-between;
+    padding-left: 32px;
   }
 
   &__bottom {
@@ -18,7 +19,6 @@
 
   &__logo {
     padding-top: 18px;
-    padding-left: 32px;
   }
 
   &__question {
