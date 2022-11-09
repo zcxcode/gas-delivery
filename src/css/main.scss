@@ -3,17 +3,8 @@
 @import "../dev-scss/elements";
 
 //adds
-@import "../dev-scss/adaptive";
 
 .body {
   font-family: "OpenSans", sans-serif;
   background-color: $c-black;
-}
-@font-face {
-  font-family: "OpenSans";
-  font-display: swap;
-  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
-    url("../fonts/OpenSans-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
 }

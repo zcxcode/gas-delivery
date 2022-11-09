@@ -64,14 +64,10 @@
 }
 
 @media (max-width: 575px) {
-  // Header
-  .header {
-    
-  }
-  // End Header
-
   // CTA
   .cta {
+    position: relative;
+    z-index: 1;
     &__anytime {
       flex-direction: column;
     }

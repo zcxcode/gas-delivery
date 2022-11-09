@@ -1,0 +1,34 @@
+.advantages {
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: $c-white;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 360px;
+    text-align: center;
+  }
+
+  &__image {
+    margin-bottom: 8px;
+  }
+
+  &__caption {
+    margin-bottom: 14px;
+  }
+}
