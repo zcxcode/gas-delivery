@@ -61,6 +61,18 @@
       flex-direction: column;
     }
   }
+  // End Header
+
+  // Select
+  .select {
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-left: 40px;
+    }
+  }
 }
 
 @media (max-width: 575px) {
