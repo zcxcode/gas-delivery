@@ -1,0 +1,38 @@
+.accordion {
+  --adaptive-height: 100px;
+
+  padding-left: 40px;
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    max-height: var(--adaptive-height);
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    font-family: "OpenSans";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: $c-white;
+  }
+  &__body--hide {
+    max-height: 0px;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-family: "OpenSans";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $c-blue;
+
+    &:active {
+      color: $c-blue;
+    }
+  }
+}
