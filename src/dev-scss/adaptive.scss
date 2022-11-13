@@ -17,8 +17,17 @@
       width: 400px;
     }
   }
-
   // End Cost
+
+  // Banner
+  .banner {
+    &__inner {
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+  // End Banner
 }
 
 @media (max-width: 1053px) {
@@ -107,7 +116,7 @@
     &__top {
       padding-left: 0;
     }
-    
+
     &__cta {
       display: flex;
       flex-direction: column;
